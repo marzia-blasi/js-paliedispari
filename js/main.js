@@ -12,7 +12,24 @@
 
 // Chiedere all’utente di inserire una parola
 
-let ask = prompt("inserire parola");
+const ask = prompt("inserire parola");
 console.log(ask);
+
+// per determinare se una parola è uguale da un lato e dall'altro come posso fare?
+let wordReverse = "";
+
+for (let i = ask.length; i >= 0; i--) {
+  const wordResult = ask.charAt(i);
+  console.log(wordResult);
+  wordReverse = wordReverse + wordResult;
+}
+console.log(wordReverse);
+
+// SE (ask è === ) log. ok ALTRIMENTI log. no
+if (ask === wordReverse) {
+  console.log("è pali!");
+} else {
+  console.log("no pali :(");
+}
 
 // Creare una funzione per capire se la parola inserita è palindroma
