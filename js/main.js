@@ -68,3 +68,13 @@ const pc = getRandomNum();
 const sum = pc + sceltaUtente;
 
 console.log(`la somma è ${sum}`);
+
+function pariDispari(sum) {
+  if (sum % 2 === 0) {
+    return "la somma è pari!";
+  } else {
+    return "la somma è dispari!";
+  }
+}
+
+alert(pariDispari(sum));
