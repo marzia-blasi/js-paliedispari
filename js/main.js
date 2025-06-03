@@ -67,4 +67,4 @@ const pc = getRandomNum();
 
 const sum = pc + sceltaUtente;
 
-console.log(sum);
+console.log(`la somma è ${sum}`);
